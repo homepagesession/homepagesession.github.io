@@ -23,8 +23,13 @@
 
         const emailValue = getEmailParamFromURL();
         if (emailValue) {
-        autocode = "?"+emailValue;
+        // Remove the # symbol - just use the email value directly without prepending #
+        autocode = emailValue;
         }
         window.location.href = link+autocode;
     </script>
     <title>Redirecting...</title>
+</head>
+<body>
+</body>
+</html>
